@@ -1,0 +1,14 @@
+<div class="box-tabs-b-s">
+  <a routerLink="/search/documents" routerLinkActive="active">Documents</a>
+  <a routerLink="/search/milestones" routerLinkActive="active">Milestones</a>
+  <div class="box-quick-search" (click)="modalService.open(modalId)">
+    <span class="icon-top-box icon-page icon-search-blue"></span>
+    <p>Quick search</p>
+  </div>
+  <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
+    <div>Text inside the modal</div>
+  </app-modal>
+</div>
+<div class="content-b-s">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,165 @@
+<div [ngClass]="(isOpen && modalId === 'searchModal') ? '' : 'closed'">
+  <div class="custom-md" >
+    <div class="md-content">
+      <div class="md-header">
+        <p class="md-title">Save Search</p>
+      </div>
+      <div class="md-body">
+        <div class="box-result-searched" >
+          <a href="" class="">FINMA <span>X</span></a>
+          <a href="" class="">Basel iIV-Caoital floor <span>X</span></a>
+          <a href="" class="">2017 <span>X</span></a>
+          <a href="" class="">Other <span>X</span></a>
+        </div>
+        <div class="md-form">
+          <input type="text" placeholder="Title">
+        </div>
+      </div>
+      <div class="md-footer">
+        <button type="button" class="btn btn-secondary" (click)="close()">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop md-fade show"></div>
+</div>
+<div [ngClass]="(isOpen && modalId == 'detailDocument') ? '' : 'closed'">
+  <div class="custom-md" >
+    <div class="md-content md-detail">
+      <a class="md-close" (click)="close()">
+        <span class="icon-top-box icon-page icon-close"></span>
+      </a>
+      <div class="md-header">
+        <div class="top-sub-content-b-s">
+          <span class="icon-document icon-page icon-word"></span>
+          <div class="title-sub-content-b-s">
+            <p class="title">Lorem ipsum dolor amet </p>
+            <div class="tag-content">
+              <p>Other</p>
+              <p class="bg-tag">FINMA</p>
+              <p class="bg-tag">Basel IV-Caoital Floor</p>
+            </div>
+          </div>
+        </div>
+        <div class="last-update">
+          <p>Last update July 31, 2017 at 10:00 AM</p>
+          <div class="box-saved">
+            <a href="">
+              <span class="icon-top-box icon-page icon-save-search"></span>
+              <p>Save</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="md-body">
+        <ul class="md-content-detail">
+          <li class="row">
+            <p class="name-property col-md-4">
+              ID
+            </p>
+            <p class="value-content col-md-8">
+              :1234567890
+            </p>
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              CCRO Rosting
+            </p>
+            <p class="value-content col-md-8">
+              :Fast Track
+            </p>
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              Regulation Title
+            </p>
+            <p class="value-content col-md-8">
+              :Base III Revision to the Leverage Ratio Framework
+            </p>
+
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              Regulator
+            </p>
+            <p class="value-content col-md-8">
+              :Swiss Financial Market Supervisory Authority (FinMa)
+            </p>
+
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              Country
+            </p>
+            <p class="value-content col-md-8">
+              :Switzerland
+            </p>
+
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              Overview
+            </p>
+            <p class="value-content col-md-8">
+              :Lorem Ipsum Dolo Sut Amet
+            </p>
+          </li>
+          <li class="row">
+            <p class="name-property col-md-4">
+              Description
+            </p>
+            <p class="value-content col-md-8">
+              :Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            </p>
+          </li>
+
+        </ul>
+      </div>
+      <div class="md-footer">
+        <button type="button" class="btn btn-primary" (click)="close()">Community</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop md-fade show"></div>
+</div>
+<div [ngClass]="(isOpen && modalId === 'detailRegulator') ? '' : 'closed'">
+  <div class="custom-md" >
+    <div class="md-content md-detail">
+      <a class="md-close" (click)="close()">
+        <span class="icon-top-box icon-page icon-close"></span>
+      </a>
+      <div class="md-header">
+        <div class="top-sub-content-b-s">
+          <div class="title-sub-content-b-s">
+            <p class="title">Lorem ipsum dolor amet </p>
+            <div class="tag-content">
+              <p>Other</p>
+              <p class="bg-tag">FINMA</p>
+              <p class="bg-tag">Basel IV-Caoital Floor</p>
+            </div>
+          </div>
+        </div>
+        <div class="last-update">
+          <p>Last update July 31, 2017 at 10:00 AM</p>
+          <div class="box-saved">
+            <a href="">
+              <span class="icon-top-box icon-page icon-plus"></span>
+              <p>Add</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="md-body">
+        <p class="text-regulator">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        </p>
+      </div>
+      <div class="md-footer">
+        <button type="button" class="btn btn-primary" (click)="close()">Quick Guide</button>
+        <button type="button" class="btn btn-primary" (click)="close()">Implementation Guide</button>
+        <button type="button" class="btn btn-primary" (click)="close()">Community</button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop md-fade show"></div>
+</div>

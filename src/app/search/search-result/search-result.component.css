@@ -1,0 +1,110 @@
+.row {
+  margin: 0;
+}
+.content-b-s{
+  padding: 50px 50px;
+}
+.form-search input{
+  border: none;
+}
+.form-search .btn-info{
+  background-color: #1f6cae;
+}
+.sub-content-b-s{
+  margin-top: 27px;
+  padding: 0;
+}
+.sub-content-b-s.padding-left-15{
+  padding-left: 15px;
+}
+.sub-content-b-s.padding-right-15{
+  padding-right: 15px;
+}
+.padding-20{
+  padding: 20px;
+  background-color: white;
+}
+
+.sub-content-b-s .top-sub-content-b-s{
+  display: flex;
+}
+.sub-content-b-s .title-sub-content-b-s{
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.sub-content-b-s .title-sub-content-b-s p.title {
+  font-weight: 600;
+}
+.sub-content-b-s .title-sub-content-b-s .tag-content{
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+}
+.sub-content-b-s .title-sub-content-b-s .tag-content p{
+  font-size: 13px;
+  float: left;
+  margin-right: 15px;
+  padding: 5px 0;
+  border-radius: 6px;
+  color: #a0a2a4;
+}
+.sub-content-b-s .title-sub-content-b-s .tag-content p.bg-tag{
+  background: #f8f8f8;
+  padding: 5px;
+}
+.sub-content-b-s .bottom-sub-content-b-s{
+  padding-bottom: 20px;
+  padding-left: 4px;
+}
+.sub-content-b-s .bottom-sub-content-b-s.padding-left-60{
+  padding-left: 60px;
+}
+.sub-content-b-s .bottom-sub-content-b-s div{
+  padding-top: 25px;
+}
+.sub-content-b-s .bottom-sub-content-b-s p{
+  line-height: 17px;
+
+}
+.box-saved{
+  position: absolute;
+  right: 18px;
+  top: 11px;
+}
+.box-saved-2{
+  position: absolute;
+  right: 4px;
+  top: 11px;
+}
+.box-result-searched{
+  padding-top: 45px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.box-result-searched p{
+  display: inline-block;
+  font-weight: 600;
+}
+.box-result-searched a {
+  background-color: white;
+  padding: 15px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  color: black;
+}
+.box-result-searched a span{
+  padding-left: 10px;
+}
+ .box-quick-search{
+  top: 35px;
+}
+.box-quick-search{
+  position: absolute;
+  right: 0px;
+  top: 40px
+}
+.box-quick-search p {
+  display: inline-block;
+  color: #1f6cae;
+}

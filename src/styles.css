@@ -1,0 +1,287 @@
+/* You can add global styles to this file, and also import other style files */
+/* =Reset default browser CSS.
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: middle;}
+:focus {outline: 0;}
+
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {font-weight: normal;text-align: left;}
+blockquote:before, blockquote:after,q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+a img{border: 0;}
+figure{margin:0}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+/* -------------------------------------------------------------- */
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: "Proxima Nova", sans-serif;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 13px;
+  background: #f1f1f1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+textarea, input[type="text"] {
+  -webkit-appearance: none;
+}
+p{
+  color: #434343;
+}
+a:hover, a:focus, a:hover p, select:hover, select:focus, select:active{
+  text-decoration: none !important;
+  outline: none !important;
+}
+a, a:link,a:active{
+  text-decoration: none;
+  outline: none !important;
+}
+.container-fluid{
+  min-height: 768px;
+  min-width: 1280px;
+}
+
+.btn-select{
+  background-color: #f1f1f1;
+  border: none;
+}
+
+/* css icon  */
+.icon-sidebar{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.icon-top-box{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.icon-document{
+  display: inline-block;
+  width: 45px;
+  height: 53px;
+  cursor: pointer;
+}
+.icon-regulator-page{
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+}
+.icon-page{
+  background: url("./assets/img/icon-page.png") no-repeat;
+}
+.icon-navigation{
+  background-position: -90px -440px;
+}
+li:hover span[class*="icon-navigation"]{
+  background-position: -90px -404px;
+}
+.icon-dashboard{
+  background-position: -48px -47px;
+}
+li:hover span[class*="icon-dashboard"]{
+  background-position: -4px -47px;
+}
+.icon-search{
+  background-position: -48px -82px
+}
+li:hover span[class*="icon-search"]{
+  background-position: -5px -82px;
+}
+.icon-regulators{
+  background-position: -49px -127px;
+}
+li:hover span[class*="icon-regulators"]{
+  background-position: -4px -127px;
+}
+.icon-regulators-standards{
+  background-position: -48px -167px;
+}
+li:hover span[class*="icon-regulators-standards"]{
+  background-position: -4px -166px;
+}
+.icon-community{
+  background-position: -48px -216px;
+}
+li:hover span[class*="icon-community"]{
+  background-position: -4px -216px;
+}
+.icon-faqs-help{
+  background-position: -46px -260px;
+}
+li:hover span[class*="icon-faqs-help"]{
+  background-position: -2px -259px;
+}
+.icon-notifications{
+  background-position: -47px -302px;
+}
+li:hover span[class*="icon-notifications"]{
+  background-position: -4px -302px;
+}
+.icon-admin{
+  background-position: -47px -341px;
+}
+li:hover span[class*="icon-admin"]{
+  background-position: -3px -341px;
+}
+/* icon dashboard */
+
+.icon-book-blue{
+  background-position: -139px -60px
+}
+.icon-globe-blue{
+  background-position: -139px -114px
+}
+.icon-calendar-blue{
+  background-position: -139px -167px
+}
+.icon-save-blue{
+  background-position: -139px -218px;
+}
+.icon-search-box{
+  background-position: -56px -375px;
+}
+.icon-search-box-new{
+  background-position: -139px -272px;
+}
+.icon-page-setting{
+  background-position: -139px -325px
+}
+.icon-bell{
+  background-position: -97px -66px
+}
+.icon-chat{
+  background-position: -97px -116px
+}
+.icon-dashboard-setting{
+  background-position: -97px -150px
+}
+.icon-save-search{
+  background-position: -97px -191px
+}
+.icon-plus-md{
+  background-position: -97px -572px
+}
+.icon-search-blue{
+  background-position: -139px -371px
+}
+.icon-minus{
+  background-position: -26px -375px;
+}
+.icon-plus{
+  background-position: -88px -511px
+}
+.icon-close{
+  background-position: -94px -624px
+}
+.icon-zoom{
+  background-position: 0px -407px
+}
+.icon-calendar-box{
+  background-position: 0px -375px;
+}
+.icon-regulations-1{
+  background-position: -44px -410px;
+}
+.icon-regulations-2{
+  background-position: -44px -447px;
+}
+.icon-regulations-3{
+  background-position: -44px -482px;
+}
+.icon-regulations-4{
+  background-position: -44px -519px;
+}
+.icon-more {
+  background-position: -86px -481px;
+}
+.icon-word {
+  background-position: -89px -240px
+}
+.icon-excel {
+  background-position: -86px -294px
+}
+.icon-pdf {
+  background-position: -86px -349px
+}
+/* end icon dashboard */
+/* icon social */
+.icon-facebook{
+  background-position: -3px -447px;
+}
+.icon-twitter{
+  background-position: -3px -483px;
+}
+.icon-google-plus{
+  background-position: -3px -519px;
+}
+.icon-linkedin{
+  background-position: -3px -555px
+}
+.icon-email{
+  background-position: -3px -591px
+}
+/* end icon social */
+
+
+/* end css icon regulator page */
+.icon-EBA{
+  background-position: -191px -4px
+}
+.icon-IASB{
+  background-position: -191px -44px
+}
+.icon-APRA{
+  background-position: -189px -130px
+}
+.icon-SFC{
+  background-position: -189px -214px
+}
+.icon-MAS{
+  background-position: -189px -300px
+}
+.icon-BOK{
+  background-position: -189px -384px
+}
+.icon-FINMA{
+  background-position: -189px -469px
+}
+.icon-PRA{
+  background-position: -189px -554px
+}
+.icon-FASB{
+  background-position: -189px -638px
+}
+.icon-FED{
+  background-position: -189px -680px
+}
+
+
+/* end css icon regulator page */
+/* end css icon  */

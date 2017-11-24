@@ -1,0 +1,27 @@
+/* css footer */
+.box-footer{
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  padding-left: 90px;
+}
+.left-footer{
+  float: left;
+  padding-top: 38px;
+  padding-left: 30px;
+}
+.left-footer p {
+  float: left;
+  font-size: 14px;
+  color: #a0a2a4;
+  padding: 2px 10px;
+  border-right: 1px solid #a0a2a4;
+}
+.left-footer p:last-child{
+  border-right: none;
+}
+.right-footer {
+  float: right;
+  padding-top: 27px;
+  padding-right: 30px;
+}

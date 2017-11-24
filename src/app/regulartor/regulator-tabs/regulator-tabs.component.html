@@ -1,0 +1,17 @@
+<div class="bg-regulator">
+
+</div>
+<div class="box-tabs-b-s">
+  <a routerLink="/regulator/documents" routerLinkActive="active">Documents</a>
+  <a routerLink="/regulator/milestones" routerLinkActive="active">Milestones</a>
+  <div class="box-quick-search" >
+    <i class="fa fa-search"></i>
+    <p>Soft by: </p>
+    <ss-multiselect-dropdown [options]="myOptions" [settings]="mySettings"  (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>
+  </div>
+  <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
+  </app-modal>
+</div>
+<div class="content-b-s">
+  <router-outlet></router-outlet>
+</div>

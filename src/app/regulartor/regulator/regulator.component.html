@@ -1,0 +1,17 @@
+<div class="container-search">
+  <div class="box-search" id="custom-left-search">
+    <div class="left-search padding-right-0" >
+      <ul class="box-list-country">
+        <li *ngFor="let item of dataCountries">
+          <p *ngIf="item.name.length > 0">{{item.name}}</p>
+          <a href="">
+            <span class="icon-page icon-regulator-page {{item.icon}}"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="body-search">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

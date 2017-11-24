@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-6 sub-content-b-s" (click)="modalService.open(modalId)" *ngFor="let item of documentsRegulator; let i = index" [ngClass]="(i % 2) ? 'padding-left-15': 'padding-right-15'">
+    <div class="padding-20">
+      <div class="top-sub-content-b-s">
+        <div class="custom-milestones">
+          <p class="num-left">29</p>
+          <p class="month-left">AUG</p>
+        </div>
+        <div [ngClass]="(i % 2) ? 'box-add-2' : 'box-add-1'"><span class="icon-top-box icon-page icon-plus-md"></span></div>
+        <div class="title-sub-content-b-s">
+          <p class="title">Expected Finalsation of BCBC Rules </p>
+          <div class="tag-content">
+            <p>Other</p>
+            <p class="bg-tag">FINMA</p>
+            <p class="bg-tag">Basel IV-Caoital Floor</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-sub-content-b-s padding-left-60">
+        <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam monummy nibth tincidunt ut laoreet dolore</p>
+        <div>
+          <a href="" class="pull-left font-strong">
+            See Detail
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
+    <div>Text inside the modal</div>
+  </app-modal>
+</div>

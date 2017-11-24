@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <aside class="left-side sidebar-offcanvas collapse-left" id="sidebar-custom">
+  <section class="sidebar">
+      <ul class="sidebar-menu">
+        <li *ngFor="let item of menus" routerLink="{{item.sref}}" routerLinkActive="active" >
+          <span class="icon-page {{item.icon}}" (click)="item.hasController && toggleSideBar()"></span>
+          <a class="" > {{item.name}}</a>
+        </li>
+      </ul>
+    </section>
+  </aside>
+</div>

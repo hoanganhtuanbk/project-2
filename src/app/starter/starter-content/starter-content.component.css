@@ -1,0 +1,295 @@
+/* css sidebar  */
+.wrapper {
+  margin-top: 0px;
+}
+.collapse-left {
+  left: -377px;
+}
+.collapse-left .sidebar-menu .icon-page {
+  position: fixed;
+  left: 0px;
+}
+.collapse-left .sidebar-menu .icon-navigation {
+  background-position: -48px -10px;
+}
+.collapse-left li:hover span[class*="icon-navigation"]{
+  background-position: -4px -10px;
+}
+.left-side {
+  position: fixed;
+  width: 470px;
+  height: 100vh;
+  z-index: 120;
+}
+.left-side {
+  background: #001f3b;
+  -webkit-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+}
+.sidebar {
+  margin-bottom: 5px;
+}
+.sidebar .sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar > .sidebar-menu > li {
+  height: 90px;
+  width: 100%;
+  float: left;
+  cursor: pointer;
+}
+.sidebar > .sidebar-menu > li:hover {
+  background-color: #9d0e2d ;
+}
+.sidebar > .sidebar-menu > li.active{
+  background-color: #9d0e2d ;
+
+}
+.sidebar > .sidebar-menu > li.active > a {
+  color: white;
+}
+.sidebar > .sidebar-menu > li > span {
+  margin: 30px;
+  float: left;
+
+}
+.sidebar .sidebar-menu > li > a {
+  color: white;
+  float: left;
+  font-size: 17px;
+  padding-top: 42px;
+}
+/* end css sidebar  */
+
+/* css dashboard */
+.container-dashboard{
+  padding: 30px;
+  padding-left: 122px;
+  margin-top: 90px;
+}
+.container-dashboard .row {
+  margin: 0;
+}
+.container-dashboard .row .col-md-5 {
+  padding-left: 0;
+}
+.box-dashboard{
+  min-height: 770px;
+}
+.box-dashboard .top-box {
+  height: 90px;
+  border-bottom: 2px solid #f1f1f1 ;
+  background-color: white;
+}
+.box-dashboard .top-box .left-top-box {
+  padding-left: 40px;
+  padding-top: 24px;
+  float: left;
+}
+.box-dashboard .top-box .body-top-box {
+  padding-left: 30px;
+  padding-top: 35px;
+  float: left;
+}
+.box-dashboard .top-box .body-top-box p{
+  color: #1f6cae;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box-dashboard .top-box .right-top-box{
+  float: right;
+  padding-top: 24px;
+  padding-right: 10px;
+}
+.box-dashboard .top-box .right-top-box div{
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.box-dashboard .top-box .right-top-box div a {
+  color: #999;
+}
+.box-dashboard .body-box{
+  background-color: white;
+}
+.container-dashboard div[class*="margin-top-30"]{
+  margin-top: 30px;
+}
+.box-dashboard .body-box-regulations {
+  padding-top: 35px;
+  padding-left: 25px;
+}
+.box-dashboard .body-box-regulations .top-body{
+  padding-bottom: 30px;
+  /*float: left;*/
+}
+.box-dashboard .body-box-regulations .top-body span {
+  /*float: left;*/
+}
+.box-dashboard .body-box-regulations .top-body div {
+  /*float: left;*/
+  display: inline-block;
+  padding-top: 5px;
+}
+.box-dashboard .body-box-regulations ul {
+  /*float: left;*/
+  padding-left: 20px;
+}
+.box-dashboard .body-box-regulations ul li{
+  padding-bottom: 30px;
+  list-style-type: disc;
+  line-height: 18px;
+}
+{
+  width: 100%;
+  display: inline-block;
+}
+.custom-regulation .box-dashboard .body-box{
+  height: 680px;
+
+}
+.custom-events{
+  width: 100%;
+  display: inline-block;
+}
+.custom-events .box-dashboard .body-box,.custom-documents .box-dashboard .body-box{
+  height: 560px;
+}
+.custom-events .box-dashboard .body-box .content-body-box{
+  width: 100%;
+  display: flow-root;
+  padding: 30px 0 30px 30px;
+  position: relative;
+  margin-bottom: 30px;
+
+}
+.custom-events .box-dashboard .body-box .content-body-box .left-content{
+  float: left;
+  text-align: center;
+  padding: 15px 15px;
+  background-color: #1f6cae;
+}
+.custom-events .box-dashboard .body-box .content-body-box .right-content{
+  float: right;
+}
+.custom-events .box-dashboard .body-box .content-body-box .body-content{
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f1f1f1;
+  position: absolute;
+  left: 110px;
+  right: 40px;
+
+}
+.custom-events .box-dashboard .body-box .content-body-box .body-content .title-body-content{
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.custom-events .box-dashboard .body-box .content-body-box .body-content .tag-body-content{
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.custom-events .box-dashboard .body-box .content-body-box .body-content .tag-body-content p{
+  font-size: 14px;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 6px;
+  color: #a0a2a4;
+}
+.bg-tag{
+  background: #f8f8f8;
+}
+.custom-events .box-dashboard .body-box .content-body-box .body-content a {
+  font-size: 15px;
+}
+.custom-events .box-dashboard .body-box .content-body-box .left-content .num-left {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: white;
+}
+.custom-events .box-dashboard .body-box .content-body-box .left-content .month-left {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+
+}
+.custom-documents{
+  width: 100%;
+  display: inline-block;
+}
+.custom-documents{
+  width: 100%;
+  display: inline-block;
+}
+.custom-documents .box-dashboard .body-box .content-body-box{
+  width: 100%;
+  display: flow-root;
+  padding: 30px 0 30px 30px;
+  position: relative;
+  margin-bottom: 30px;
+
+}
+.custom-documents .box-dashboard .body-box .content-body-box .left-content{
+  float: left;
+}
+.custom-documents .box-dashboard .body-box .content-body-box .right-content{
+  float: right;
+}
+.custom-documents .box-dashboard .body-box .content-body-box .body-content{
+  padding-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f1f1f1;
+  position: absolute;
+  left: 90px;
+  right: 20px;
+
+}
+.custom-documents .box-dashboard .body-box .content-body-box .body-content .title-body-content{
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.custom-documents .box-dashboard .body-box .content-body-box .body-content .tag-body-content{
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.custom-documents .box-dashboard .body-box .content-body-box .body-content .tag-body-content p{
+  font-size: 14px;
+  float: left;
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.custom-documents .box-dashboard .body-box .content-body-box .body-content a {
+  font-size: 15px;
+}
+.see-documents{
+  position: absolute;
+  left: -55px;
+}
+/* end css dashboard */
+
+
+
+/* css general */
+
+.cls-one{
+  width: 45%;
+  display: inline-block;
+}
+.cls-two{
+  width: 55%;
+  display: inline-block;
+}
+.padding-right-30 {
+  padding-right: 30px;
+}
+/* end css general */

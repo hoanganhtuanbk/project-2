@@ -1,0 +1,69 @@
+<div class="container-profile">
+  <div class="box-profile">
+    <div class="right-box-profile">
+      <div class="profile">
+        <img src="http://images.easyfreeclipart.com/1491/log-in-sign-up-upload-clipart-1491956.png" alt="" class="avatar">
+
+      </div>
+      <div class="profile-info">
+        <a href="" class="name">Glenn Maxwell</a>
+        <a href="" class="mail">glenn.m@email.com</a>
+      </div>
+      <div class="profile-update">
+        <div>
+          <button class="btn btn-primary">Update Profile</button>
+        </div>
+        <div>
+          <button class="btn btn-primary">Change Password</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="body-box-profile">
+      <div class="dashboard-settings">
+        <div class="top-dashboard-settings">
+          <span class="icon-top-box icon-page icon-globe-blue" ></span>
+          <div>
+            <p class="title-top-ds">Dashboard settings</p>
+          </div>
+        </div>
+        <div class="content-dashboard-settings">
+          <div class="sub-content-ds" *ngFor="let item of dashboardSettings;let i = index" >
+            <div class="left-sub-content-ds">
+              <span class="icon-top-box icon-page {{item.icon}}"></span>
+            </div>
+            <div class="right-sub-content-ds"  [ngClass]="i == (dashboardSettings.length-1) ? 'no-border':''">
+              <p>{{item.name}}</p>
+              <div class="wrapper-switch">
+                <label class="label-checkbox"><input type="checkbox" [checked]="item.isActive" class="input-checkbox"></label>
+              </div>
+              <span class="icon-top-box icon-page icon-dashboard-setting"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-settings">
+        <div class="top-dashboard-settings">
+          <span class="icon-top-box icon-page icon-bell" ></span>
+          <div>
+            <p class="title-top-ds">Notification settings</p>
+          </div>
+        </div>
+        <div class="sub-content-ds" *ngFor="let item of notificationSettings, let i = index" >
+          <div class="left-sub-content-ds">
+            <span class="icon-top-box icon-page {{item.icon}}"></span>
+          </div>
+          <div class="right-sub-content-ds" [ngClass]="i == (dashboardSettings.length-1) ? 'no-border':''">
+            <p>{{item.name}}</p>
+            <div class="wrapper-switch">
+              <label class="label-checkbox"><input type="checkbox" [checked]="item.isActive" class="input-checkbox"></label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

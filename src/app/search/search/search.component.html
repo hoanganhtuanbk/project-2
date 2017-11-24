@@ -1,0 +1,52 @@
+<div class="container-search">
+  <div class="box-search" id="custom-left-search">
+    <div class="left-search" >
+      <a class="box-toggle-left-search" (click)="toggleLeftSearch()"><i class="" [ngClass]="isHideLeftSearch ? 'fa fa-angle-right fa-2x' : 'fa fa-angle-left fa-2x'" aria-hidden="true"></i></a>
+      <div class="box-tabs-l-s">
+        <a  [ngClass]="tabPresent ? 'active' : 'bg-gray'" (click)="handleTabsLeftSearch()">Filter</a>
+        <a  [ngClass]="!tabPresent ? 'active' : 'bg-gray'" (click)="handleTabsLeftSearch()">Saved (4) </a>
+      </div>
+      <div class="content-l-s" *ngIf="tabPresent">
+        <div class="sub-content-l-s">
+          Regulator
+        </div>
+        <div class="sub-content-l-s">
+          Regulation
+        </div>
+        <div class="sub-content-l-s">
+          Year
+        </div>
+        <div class="sub-content-l-s">
+          Document Type
+        </div>
+        <div class="button-apply">
+          <button class="btn">Apply</button>
+        </div>
+      </div>
+      <div class="content-l-s" *ngIf="!tabPresent">
+        <ul>
+          <li>
+            <p>Untitle Save 1</p>
+            <span class="icon-top-box icon-page icon-more pull-right"></span>
+          </li>
+          <li>
+            <p>Untitle Save 2</p>
+            <span class="icon-top-box icon-page icon-more pull-right"></span>
+          </li>
+          <li>
+            <p>Untitle Save 3</p>
+            <span class="icon-top-box icon-page icon-more pull-right"></span>
+          </li>
+          <li>
+            <p>Untitle Save 4</p>
+            <span class="icon-top-box icon-page icon-more pull-right"></span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="body-search">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
