@@ -21,7 +21,7 @@ git clone https://github.com/YOUR_USERNAME/Angular2-AdminLTE.git
 
 - Install the packages
 ```bash
-cd Angular2-AdminLTE
+cd project-2
 npm install
 ```
 
