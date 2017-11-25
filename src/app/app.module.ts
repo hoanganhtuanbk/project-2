@@ -33,6 +33,8 @@ import { StandardsTabQuickGuideComponent } from './standards/standards-tab-quick
 import { StandardsTabImplementationGuideComponent } from './standards/standards-tab-implementation-guide/standards-tab-implementation-guide.component';
 import { StandardsTabContactsComponent } from './standards/standards-tab-contacts/standards-tab-contacts.component';
 import { StandardsTabLinksComponent } from './standards/standards-tab-links/standards-tab-links.component';
+import { QuickGuideOverviewComponent } from './standards/quick-guide-overview/quick-guide-overview.component';
+import { QuickGuideGlossaryComponent } from './standards/quick-guide-glossary/quick-guide-glossary.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +65,8 @@ import { StandardsTabLinksComponent } from './standards/standards-tab-links/stan
     StandardsTabImplementationGuideComponent,
     StandardsTabContactsComponent,
     StandardsTabLinksComponent,
+    QuickGuideOverviewComponent,
+    QuickGuideGlossaryComponent,
   ],
   imports: [
     BrowserModule,

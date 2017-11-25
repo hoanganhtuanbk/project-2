@@ -1,0 +1,24 @@
+<div class="container-notification">
+    <div class="box-notification">
+      <ul>
+        <li class="row" *ngFor="let item of dataNotifications">
+        <div class="col-md-1">
+          <span class="icon-top-box icon-page" [ngClass]="item.isDot ? 'icon-dot': ''"></span>
+
+          <span class="icon-top-box icon-page {{item.icon}}"></span>
+        </div>
+          <div class="col-md-10">
+            <p>
+              Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam monummy nibth tincidunt ut laoreet dolore
+              Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam monummy nibth tincidunt ut laoreet dolore
+            </p>
+          </div>
+          <div class="col-md-1 text-right">
+            <p class="text-blur">
+             {{item.time}}
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>

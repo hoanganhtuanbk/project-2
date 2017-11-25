@@ -1,0 +1,36 @@
+.container-notification{
+  width: 100%;
+  padding-left: 92px;
+  display: -webkit-box;
+}
+.row{
+  margin: 0;
+}
+p{
+  line-height: 20px;
+}
+.box-notification{
+  max-width: 80%;
+  background-color: white;
+  margin: 110px auto;
+  min-height: 500px;
+  padding: 30px;
+  margin-bottom: 22px;
+}
+li {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 15px 0;
+}
+li:last-child{
+  border-bottom: none;
+}
+.padding-top-10{
+  padding-top: 10px;
+}
+.col-md-1{
+  padding-right: 0;
+  padding-left: 0;
+}
+.text-blur{
+  color: #a0a2a4;
+}

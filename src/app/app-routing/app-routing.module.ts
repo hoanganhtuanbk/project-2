@@ -26,6 +26,8 @@ import {StandardsTabQuickGuideComponent} from '../standards/standards-tab-quick-
 import {StandardsTabImplementationGuideComponent} from '../standards/standards-tab-implementation-guide/standards-tab-implementation-guide.component';
 import {StandardsTabContactsComponent} from '../standards/standards-tab-contacts/standards-tab-contacts.component';
 import {StandardsTabLinksComponent} from '../standards/standards-tab-links/standards-tab-links.component';
+import {QuickGuideOverviewComponent} from '../standards/quick-guide-overview/quick-guide-overview.component';
+import {QuickGuideGlossaryComponent} from '../standards/quick-guide-glossary/quick-guide-glossary.component';
 
 @NgModule({
   imports: [
@@ -128,7 +130,22 @@ import {StandardsTabLinksComponent} from '../standards/standards-tab-links/stand
                   },
                   {
                     path: 'quick-guide',
-                    component: StandardsTabQuickGuideComponent
+                    component: StandardsTabQuickGuideComponent,
+                    children: [
+                      {
+                        path: '',
+                        redirectTo: 'overview',
+                        pathMatch: 'full'
+                      },
+                      {
+                        path: 'overview',
+                        component: QuickGuideOverviewComponent,
+                      },
+                      {
+                        path: 'glossary',
+                        component: QuickGuideGlossaryComponent,
+                      }
+                      ]
                   },
                   {
                     path: 'implementation-guide',

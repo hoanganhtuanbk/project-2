@@ -1,0 +1,19 @@
+<div class="bg-regulator">
+
+</div>
+<div class="box-tabs-b-s">
+  <a routerLink="/regulations-regulators/documents" routerLinkActive="active">Documents</a>
+  <a routerLink="/regulations-regulators/milestones" routerLinkActive="active">Milestones</a>
+  <a routerLink="/regulations-regulators/quick-guide" routerLinkActive="active">Quick Guide</a>
+  <a routerLink="/regulations-regulators/implementation-guide" routerLinkActive="active">Implementation guide</a>
+  <a routerLink="/regulations-regulators/contact" routerLinkActive="active">Contacts</a>
+  <a routerLink="/regulations-regulators/links" routerLinkActive="active">Links</a>
+  <div class="box-quick-search" >
+    <i class="fa fa-search"></i>
+    <p>Soft by: </p>
+    <ss-multiselect-dropdown [options]="myOptions" [settings]="mySettings"  (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>
+  </div>
+</div>
+<div class="content-b-s">
+  <router-outlet></router-outlet>
+</div>

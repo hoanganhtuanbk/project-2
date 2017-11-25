@@ -1,0 +1,34 @@
+
+<div class="row">
+  <div class="col-md-6 sub-content-b-s" (click)="modalService.open(modalId)" *ngFor="let item of documentsSearch; let i = index" [ngClass]="(i % 2) ? 'padding-left-15': 'padding-right-15'">
+    <div class="padding-20">
+      <div class="top-sub-content-b-s">
+        <span class="icon-document icon-page {{item.icon}}"></span>
+        <div [ngClass]="(i % 2) ? 'box-saved-2' : 'box-saved'"><span class="icon-top-box icon-page icon-save-search"></span></div>
+        <div class="title-sub-content-b-s">
+          <p class="title">Lorem ipsum dolor amet </p>
+          <div class="tag-content">
+            <p>Other</p>
+            <p class="bg-tag">FINMA</p>
+            <p class="bg-tag">Basel IV-Caoital Floor</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-sub-content-b-s">
+        <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam monummy nibth tincidunt ut laoreet dolore</p>
+        <div>
+          <a href="" class="pull-left font-strong">
+            See Detail
+          </a>
+          <a href="" class="pull-right">
+            Jul 31, 2017
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
+    <div>Text inside the modal</div>
+  </app-modal>
+</div>

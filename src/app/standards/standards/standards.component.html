@@ -1,0 +1,27 @@
+<div class="container-search">
+  <div class="box-search" id="custom-left-search">
+    <div class="left-search padding-right-0" >
+      <ul class="box-list-country">
+        <li *ngFor="let item of dataStandards; let i = index">
+          <span class="icon-top-box icon-page {{'icon-regulations-'+(i+1)}}"></span>
+          <a class="title">
+            <p>{{item.title}}</p>
+          </a>
+          <ul class="content-body">
+            <li *ngFor="let value of item.items">
+              <span>
+                <i class="fa fa-circle"></i>
+              </span>
+              <a href="">
+                {{value.name}}
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="body-search">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.box-quick-guide{
+  background-color: white;
+  margin: 25px -50px;
+  padding: 50px;
+  display: flow-root;
+}
+.top-box-quick-guide{
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dadada;
+}
+.top-box-quick-guide p {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f6cae;
+  float: left;
+}
+.top-box-quick-guide div a{
+  background-color: #f8f8f8;
+  padding: 10px;
+  color: #0b0c0d;
+  margin: 0;
+}
+.top-box-quick-guide div a.active{
+  background-color: #f1f1f1 ;
+  font-weight: 600;
+}
+.top-box-quick-guide div a:first-child{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.top-box-quick-guide div a:last-child{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* end css top box */
