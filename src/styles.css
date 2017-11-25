@@ -93,8 +93,17 @@ a, a:link,a:active{
   height: 40px;
   cursor: pointer;
 }
+.icon-page-logo{
+  width: 209px;
+  height: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
 .icon-page{
   background: url("./assets/img/icon-page.png") no-repeat;
+}
+.icon-logo{
+  background-position: -11px -726px;
 }
 .icon-navigation{
   background-position: -90px -440px;
@@ -205,6 +214,9 @@ li:hover span[class*="icon-admin"]{
 }
 .icon-zoom{
   background-position: 0px -407px
+}
+.icon-next{
+  background-position: -136px -431px
 }
 .icon-calendar-box{
   background-position: 0px -375px;

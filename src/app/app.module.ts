@@ -71,7 +71,7 @@ import { QuickGuideGlossaryComponent } from './standards/quick-guide-glossary/qu
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MultiselectDropdownModule
+    MultiselectDropdownModule,
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]

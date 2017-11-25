@@ -162,9 +162,10 @@ import {QuickGuideGlossaryComponent} from '../standards/quick-guide-glossary/qui
                 ]
               },
             ]
-          },
+          }
         ]
         },
+      {path : '**', redirectTo: 'dashboard'}
     ])
   ],
   declarations: [],

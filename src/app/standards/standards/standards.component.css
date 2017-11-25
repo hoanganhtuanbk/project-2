@@ -6,6 +6,8 @@
 }
 .container-search .box-search{
   min-height: 1000px;
+  background-color: white;
+
 }
 .container-search .box-search .left-search{
   width: 380px;
@@ -29,7 +31,6 @@
   top: 0;
   bottom: 0;
   transition: all 0.3s;
-  max-width: 1300px;
   margin: 0 auto;
   z-index: 1;
 }

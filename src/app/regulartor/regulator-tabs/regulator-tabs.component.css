@@ -38,4 +38,21 @@
 .bg-regulator{
   height: 200px;
   background-image: url("../../../assets/img/bg-standard.png");
+  background-size: cover;
+  position: relative;
+}
+.bg-regulator span{
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  position: absolute;
+  left: 55px;
+  bottom: 55px;
+}
+.bg-regulator a {
+  color: white;
+  position: absolute;
+  right: 55px;
+  bottom: 20px;
+  font-size: 15px;
 }

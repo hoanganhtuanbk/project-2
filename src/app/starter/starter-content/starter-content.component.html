@@ -1,0 +1,147 @@
+<div class="container-dashboard">
+      <div class="row" >
+          <div class="custom-regulation col-md-5" >
+            <div class="box-dashboard">
+              <div class="top-box" >
+                <div class="left-top-box">
+                  <span class="icon-top-box icon-page icon-book-blue"></span>
+                </div>
+                <div class="body-top-box">
+                  <p>Regulations & standards</p>
+                </div>
+                <div class="right-top-box">
+                  <span class="icon-top-box icon-page icon-search-box"></span>
+                  <span class="icon-top-box icon-page icon-minus"></span>
+
+                </div>
+              </div>
+              <div class="body-box body-box-regulations">
+                <div class="row">
+                  <div class="col-md-6" *ngFor="let item of dataRegulations; let iplus = index" >
+                    <div class="top-body"  >
+                      <span class="icon-top-box icon-page {{'icon-regulations-'+(iplus + 1)}}"></span>
+                      <div>
+                        <p>{{item.title}}</p>
+                      </div>
+                    </div>
+                    <ul class="content-body">
+                      <li *ngFor="let value of item.items">
+                        {{value.name}}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="custom-regulation col-md-7" >
+            <div class="box-dashboard" >
+              <div class="top-box">
+                <div class="left-top-box">
+                  <span class="icon-top-box icon-page icon-globe-blue"></span>
+                </div>
+                <div class="body-top-box">
+                  <p>Global regulators</p>
+                </div>
+                <div class="right-top-box">
+                  <span class="icon-top-box icon-page icon-search-box"></span>
+                  <span class="icon-top-box icon-page icon-minus"></span>
+                  <span class="icon-top-box icon-page icon-zoom"></span>
+
+                </div>
+              </div>
+              <div class="body-box">
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+  <div class="row margin">
+    <div class="custom-events col-md-5" >
+      <div class="box-dashboard">
+        <div class="top-box">
+          <div class="left-top-box">
+            <span class="icon-top-box icon-page icon-calendar-blue"></span>
+          </div>
+          <div class="body-top-box">
+            <p>Upcoming events (3)</p>
+          </div>
+          <div class="right-top-box">
+            <span class="icon-top-box icon-page icon-calendar-box"></span>
+            <span class="icon-top-box icon-page" data-ng-class="isShowEvents ? 'icon-minus':'icon-plus'" data-ng-click="toggleShowEvent()"></span>
+
+          </div>
+        </div>
+        <div class="body-box">
+          <div class="content-body-box" *ngFor="let item of dataEvents">
+            <div class="left-content">
+              <p class="num-left">29</p>
+              <p class="month-left">AUG</p>
+            </div>
+            <div class="body-content">
+              <p class="title-body-content">
+                {{item.title}}
+              </p>
+              <div class="tag-body-content">
+                <p>Other</p>
+                <p class="bg-tag">FINMA</p>
+                <p class="bg-tag">Basel IV-Caoital Floor</p>
+              </div>
+              <div>
+                <a href="">See Detail</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span class="icon-top-box icon-page icon-more"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="custom-documents col-md-7"  >
+      <div class="box-dashboard">
+        <div class="top-box">
+          <div class="left-top-box">
+            <span class="icon-top-box icon-page icon-save-blue"></span>
+          </div>
+          <div class="body-top-box">
+            <p>Saved documents (4)</p>
+          </div>
+          <div class="right-top-box">
+            <div>
+              <a href="">See All</a>
+            </div>
+            <span class="icon-top-box icon-page icon-minus" ></span>
+
+
+          </div>
+        </div>
+        <div class="body-box">
+          <div class="content-body-box" *ngFor="let item of documentsSearch">
+            <div class="left-content">
+              <span class="icon-document icon-page {{item.icon}}"></span>
+            </div>
+            <div class="body-content">
+              <p class="title-body-content">
+                {{item.title}}
+              </p>
+              <div class="tag-body-content">
+                <p>Other</p>
+                <p class="bg-tag">FINMA</p>
+                <p class="bg-tag">Basel IV-Caoital Floor</p>
+              </div>
+              <div>
+                <a href="" class="pull-left see-documents">See Detail</a>
+                <a href="" class="pull-right">Jul 31, 2017</a>
+              </div>
+            </div>
+            <div class="right-content">
+              <span class="icon-top-box icon-page icon-more"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

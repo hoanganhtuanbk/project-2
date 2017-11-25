@@ -80,11 +80,41 @@ export class StarterContentComponent implements OnInit {
         }
       ]
     }];
+  dataEvents: any = [{
+    title: 'Expected Finalisation of BCBS Rules'
+  },{
+    title: 'Finalisation of Templates by FINMA'
+  },{
+    title: 'IFRS Mandatory Application'
+  }];
+  documentsSearch: any = [{
+    title: 'Lorem ipsum dolor sit amet consectetur ... ',
+    icon: 'icon-word'
+  },{
+    title: 'Lorem ipsum dolor sit amet consectetur ... ',
+    icon: 'icon-excel'
+
+  },{
+    title: 'Lorem ipsum dolor sit amet consectetur ... ',
+    icon: 'icon-pdf'
+
+  }];
+  listBoxers: any = [{
+    id: 1
+  },
+    {
+      id: 2
+    }];
   constructor() { }
 
   ngOnInit() {
     // Update the AdminLTE layouts
     // AdminLTE.init();
   }
-
+  private releaseDrop(event) {
+    const index = this.listBoxers.indexOf(event);
+    if (index >= 0) {
+      this.listBoxers.splice(index,1);
+    }
+  }
 }
