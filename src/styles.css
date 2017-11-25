@@ -179,6 +179,9 @@ li:hover span[class*="icon-admin"]{
 .icon-chat{
   background-position: -97px -116px
 }
+.icon-dot{
+  background-position: -137px -407px;
+}
 .icon-dashboard-setting{
   background-position: -97px -150px
 }
@@ -284,4 +287,16 @@ li:hover span[class*="icon-admin"]{
 
 
 /* end css icon regulator page */
+.icon-mail-md{
+  background-position: -3px -628px
+}
+.icon-paper{
+  background-position: -3px -664px
+}
+.icon-list{
+  background-position: -47px -664px
+}
+.icon-reload{
+  background-position: -92px -664px;
+}
 /* end css icon  */

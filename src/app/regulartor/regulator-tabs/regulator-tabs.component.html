@@ -9,8 +9,6 @@
     <p>Soft by: </p>
     <ss-multiselect-dropdown [options]="myOptions" [settings]="mySettings"  (ngModelChange)="onChange($event)"></ss-multiselect-dropdown>
   </div>
-  <app-modal [modalTitle]="'Some title'" [blocking]='false' [modalId]='modalId'>
-  </app-modal>
 </div>
 <div class="content-b-s">
   <router-outlet></router-outlet>

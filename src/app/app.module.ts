@@ -1,4 +1,3 @@
-import { AdminModule } from './admin/admin.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -25,6 +24,15 @@ import { RegulatorComponent } from './regulartor/regulator/regulator.component';
 import { RegulatorTabsComponent } from './regulartor/regulator-tabs/regulator-tabs.component';
 import { RegulatorTabDocumentsComponent } from './regulartor/regulator-tab-documents/regulator-tab-documents.component';
 import { RegulatorTabMilestonesComponent } from './regulartor/regulator-tab-milestones/regulator-tab-milestones.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { StandardsComponent } from './standards/standards/standards.component';
+import { StandardsTabsComponent } from './standards/standards-tabs/standards-tabs.component';
+import { StandardsTabDocumentsComponent } from './standards/standards-tab-documents/standards-tab-documents.component';
+import { StandardsTabMilestonesComponent } from './standards/standards-tab-milestones/standards-tab-milestones.component';
+import { StandardsTabQuickGuideComponent } from './standards/standards-tab-quick-guide/standards-tab-quick-guide.component';
+import { StandardsTabImplementationGuideComponent } from './standards/standards-tab-implementation-guide/standards-tab-implementation-guide.component';
+import { StandardsTabContactsComponent } from './standards/standards-tab-contacts/standards-tab-contacts.component';
+import { StandardsTabLinksComponent } from './standards/standards-tab-links/standards-tab-links.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +54,15 @@ import { RegulatorTabMilestonesComponent } from './regulartor/regulator-tab-mile
     RegulatorTabsComponent,
     RegulatorTabDocumentsComponent,
     RegulatorTabMilestonesComponent,
+    NotificationsComponent,
+    StandardsComponent,
+    StandardsTabsComponent,
+    StandardsTabDocumentsComponent,
+    StandardsTabMilestonesComponent,
+    StandardsTabQuickGuideComponent,
+    StandardsTabImplementationGuideComponent,
+    StandardsTabContactsComponent,
+    StandardsTabLinksComponent,
   ],
   imports: [
     BrowserModule,

@@ -30,7 +30,7 @@ export class StarterLeftSideComponent implements OnInit {
     {
     name: 'Regulators & Standards',
     icon: 'icon-sidebar icon-regulators-standards',
-    sref: '/standards'
+    sref: '/regulations-regulators'
 
   },
     {
