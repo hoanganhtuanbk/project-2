@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect';
-
+import { DragulaModule } from 'ng2-dragula';
 import { AppComponent } from './app.component';
 import { StarterComponent } from './starter/starter.component';
 import { StarterHeaderComponent } from './starter/starter-header/starter-header.component';
@@ -72,6 +72,7 @@ import { QuickGuideGlossaryComponent } from './standards/quick-guide-glossary/qu
     BrowserModule,
     AppRoutingModule,
     MultiselectDropdownModule,
+    DragulaModule
   ],
   providers: [ModalService],
   bootstrap: [AppComponent]

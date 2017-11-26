@@ -7,14 +7,98 @@
   padding: 0 36px 0 92px;
   background-color: white;
   z-index: 100;
+  top: 0
 }
 .top-header .top-title{
   padding-left: 55px;
   padding-top: 35px;
+  float: left;
 }
 .top-header .top-title h3 {
   color: black;
   font-size: 20px;
   font-weight: 500;
+}
+.navbar-custom-menu, .main-header .navbar-right {
+  float: right;
+}
+.navbar-static-top{
+  padding-top: 19px;
+}
+.navbar-custom-menu>.navbar-nav>li {
+  position: relative;
+}
+.navbar-search input{
+  width: 525px;
+  padding: 18px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+.navbar-search span{
+  position: absolute;
+  top: 7px;
+  right: 11px;
+}
+.navbar-nav>li>a:hover{
+  background-color: transparent;
+}
+.label {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 3px;
+  line-height: .9;
+}
+.label-success {
+  background-color: #00a65a !important;
+}
+.navbar-nav>.user-menu a{
+  padding: 0;
+}
+.navbar-nav>.user-menu .user-image {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: -2px;
+
+}
+.navbar-nav>.user-menu div{
+  float: right;
+}
+.navbar-nav>.user-menu div p {
+  color: #afafaf;
+}
+.navbar-nav>.user-menu div span{
+  font-size: 15px;
+  color: #0b0c0d;
+}
+.user-dropdown ul{
+  position: absolute;
+  top: 71px;
+  width: 210px;
+  padding: 20px 0;
+  background-color: white;
+  z-index: 1050;
+  right: 0;
+}
+.user-dropdown ul li{
+  padding: 0 30px;
+  cursor: pointer;
+}
+.navbar-nav>.user-menu div.user-dropdown ul li p {
+  display: inline-block;
+  color: #0b0c0d;
+}
+.user-dropdown ul li:hover{
+  background-color: #f1f1f1;
+}
+.modal-backdrop.show {
+  opacity: .1;
+  top: 90px;
 }
 /*end css header*/

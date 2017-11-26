@@ -1,11 +1,66 @@
 <header>
-  <!-- header desktop -->
-  <div class="top-header">
+  <div class="main-header top-header">
     <div class="top-title">
-      <h3>Regulations</h3>
+      <h3>
+        Regulations
+      </h3>
     </div>
-    <a ui-sref=".profile"></a>
+    <nav class="navbar-static-top">
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="navbar-search">
+            <input type="text" title="" placeholder="Quick search">
+            <span class="icon-top-box icon-page icon-search-box"></span>
+          </li>
+          <li class="messages-menu">
+            <a href="#" class="" >
+              <span class="icon-top-box icon-page icon-setting"></span>
+            </a>
+          </li><li class="messages-menu">
+            <a href="#" class="" >
+              <span class="icon-top-box icon-page icon-pin"></span>
+            </a>
+          </li>
+          <li class="messages-menu">
+            <a href="#" class="" >
+              <span class="icon-top-box icon-page icon-inbox"></span>
+              <span class="label">3</span>
+
+            </a>
+          </li>
+          <li class="notifications-menu">
+            <a href="#" class="" >
+              <span class="icon-top-box icon-page icon-bell-md"></span>
+              <span class="label">5</span>
+            </a>
+          </li>
+          <li class="user user-menu">
+            <a class="" >
+              <img src="../../../assets/img/avatar.png" class="user-image" alt="User Image">
+              <div (click)="toggleShowDropdown()">
+                <p >Welcome</p>
+                <span>Alexander Pierce <i class="fa fa-caret-down"></i></span>
+              </div>
+            </a>
+
+            <div class="user-dropdown" *ngIf="isShowDropdown == true">
+              <ul >
+                <li class="user-header">
+                  <span class="icon-top-box icon-page icon-person"></span>
+                  <p> My profile</p>
+                </li>
+                <li class="user-body">
+                  <span class="icon-top-box icon-page icon-power"></span>
+                  <p>Logout</p>
+                </li>
+              </ul>
+              <div class="modal-backdrop md-fade show" (click)="toggleShowDropdown()"></div>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <div class="clearfix"></div>
-  <!-- end header desktop -->
+
 </header>

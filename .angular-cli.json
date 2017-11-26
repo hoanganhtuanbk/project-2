@@ -22,6 +22,7 @@
         "../node_modules/bootstrap/dist/css/bootstrap.css",
         "../node_modules/font-awesome/css/font-awesome.css",
         "../node_modules/ionicons/css/ionicons.css",
+        "../node_modules/dragula/dist/dragula.css",
         "styles.css"
       ],
       "scripts": [
@@ -40,8 +41,7 @@
         "../node_modules/icheck/icheck.js",
         "../node_modules/admin-lte/dist/js/app.js",
         "../node_modules/ngx-modialog/bundle/ngx-modialog.js",
-        "../node_modules/ngx-modialog/plugins/bootstrap/bundle/ngx-modialog-bootstrap.js",
-        "assets/js/scripts.js"
+        "../node_modules/ngx-modialog/plugins/bootstrap/bundle/ngx-modialog-bootstrap.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

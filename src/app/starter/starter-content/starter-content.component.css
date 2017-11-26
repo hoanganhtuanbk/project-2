@@ -69,13 +69,12 @@
   padding: 30px;
   padding-left: 122px;
   margin-top: 90px;
+  padding-right: 15px;
 }
 .container-dashboard .row {
   margin: 0;
 }
-.container-dashboard .row .col-md-5 {
-  padding-left: 0;
-}
+
 .box-dashboard{
   min-height: 770px;
 }
@@ -169,9 +168,7 @@
   padding-right: 30px;
 }
 /* end css general */
-.custom-events{
-  display: inline-block;
-}
+
 .custom-events .box-dashboard .body-box,.custom-documents .box-dashboard .body-box{
   height: 560px;
 }
@@ -237,15 +234,14 @@
 
 }
 
-.custom-documents{
-  display: inline-block;
-}
+
 .custom-documents .box-dashboard .body-box .content-body-box{
   width: 100%;
   display: flow-root;
   padding: 30px 0 30px 30px;
   position: relative;
   margin-bottom: 30px;
+  min-height: 130px;;
 }
 .custom-documents .box-dashboard .body-box .content-body-box .left-content{
   float: left;

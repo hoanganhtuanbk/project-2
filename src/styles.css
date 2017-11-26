@@ -59,6 +59,9 @@ a, a:link,a:active{
   text-decoration: none;
   outline: none !important;
 }
+a:hover{
+  cursor: pointer;
+}
 .container-fluid{
   min-height: 768px;
   min-width: 1280px;
@@ -108,55 +111,55 @@ a, a:link,a:active{
 .icon-navigation{
   background-position: -90px -440px;
 }
-li:hover span[class*="icon-navigation"]{
+.sidebar-menu li:hover span[class*="icon-navigation"]{
   background-position: -90px -404px;
 }
 .icon-dashboard{
   background-position: -48px -47px;
 }
-li:hover span[class*="icon-dashboard"]{
+.sidebar-menu li:hover span[class*="icon-dashboard"]{
   background-position: -4px -47px;
 }
 .icon-search{
   background-position: -48px -82px
 }
-li:hover span[class*="icon-search"]{
+.sidebar-menu li:hover span[class*="icon-search"]{
   background-position: -5px -82px;
 }
 .icon-regulators{
   background-position: -49px -127px;
 }
-li:hover span[class*="icon-regulators"]{
+.sidebar-menu li:hover span[class*="icon-regulators"]{
   background-position: -4px -127px;
 }
 .icon-regulators-standards{
   background-position: -48px -167px;
 }
-li:hover span[class*="icon-regulators-standards"]{
+.sidebar-menu li:hover span[class*="icon-regulators-standards"]{
   background-position: -4px -166px;
 }
 .icon-community{
   background-position: -48px -216px;
 }
-li:hover span[class*="icon-community"]{
+.sidebar-menu li:hover span[class*="icon-community"]{
   background-position: -4px -216px;
 }
 .icon-faqs-help{
   background-position: -46px -260px;
 }
-li:hover span[class*="icon-faqs-help"]{
+.sidebar-menu li:hover span[class*="icon-faqs-help"]{
   background-position: -2px -259px;
 }
 .icon-notifications{
   background-position: -47px -302px;
 }
-li:hover span[class*="icon-notifications"]{
+.sidebar-menu li:hover span[class*="icon-notifications"]{
   background-position: -4px -302px;
 }
 .icon-admin{
   background-position: -47px -341px;
 }
-li:hover span[class*="icon-admin"]{
+.sidebar-menu li:hover span[class*="icon-admin"]{
   background-position: -3px -341px;
 }
 /* icon dashboard */
@@ -312,3 +315,21 @@ li:hover span[class*="icon-admin"]{
   background-position: -92px -664px;
 }
 /* end css icon  */
+.icon-setting{
+  background-position: -135px -472px
+}
+.icon-pin{
+  background-position: -135px -513px;
+}
+.icon-inbox{
+  background-position: -140px -549px
+}
+.icon-bell-md{
+  background-position: -140px -586px
+}
+.icon-person{
+  background-position: -138px -652px
+}
+.icon-power{
+  background-position: -138px -623px
+}
